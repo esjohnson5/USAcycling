@@ -1,0 +1,17 @@
+input[name='search'] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.user_following{
+	text-align: center
+}
+
+.profile_container{
+	border-radius: 15px;
+}
+
+#profile_close{
+	color: black;
+}

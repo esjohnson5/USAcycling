@@ -1,0 +1,110 @@
+<style>
+		#profile_title
+		{
+			color: #ffffff;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 40px;
+			opacity: 0.4;
+			right: 40px;
+			margin-top: -5px;
+		}
+		#profile_close{
+			position: absolute;
+			display: inline;
+			right: 10px;
+			top: 10px;
+		}
+		#profile_avatar
+		{
+			float: left;
+			width: 100px
+		}
+		#profile_avatar img {
+			width: 100px;
+			border: 3px solid #666666;
+			margin-right: 20px;
+		}
+		#profile_name
+		{
+			float: left;
+			display: inline-block;
+			margin-left: 20px;
+			font-size: 30px;
+			text-shadow: 2px 2px 2px #666666;
+			margin-top: 30px;
+		}
+		#timeline_events, #rider_bio
+		{
+			max-height: 200px;
+			overflow: auto;
+		}
+		p.question{
+			font-weight: bold;
+			color: #333333;
+			margin-bottom: 5px !Important
+		}
+		p.answer{
+			font-style: italic;
+			color: #ffffff;
+			margin-bottom: 5px !Important
+		}
+		.tlevent{
+			border-radius: 10px;
+			margin-bottom: 10px;
+			background: rgba(255, 255, 255, 0.3);
+			padding: 5px;
+			width: 95%;
+		}
+		.tlevent div{
+		}
+		.eventicon{
+			float: left;
+			margin-right: 10px;
+		}
+		.eventinfo{
+			float: left;
+			width: 340px;
+		}
+		.eventdate{
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: bold;
+		}
+		#hometown{
+			line-hight: 24px;
+			color: #ffffff;
+			font-size: 18px;
+			margin-left: 10px;
+		}
+		.special{
+			background: rgba(248,232,177,0.3);
+		}
+		.natchamp{
+			background: rgba(64,98,153,0.3);
+		}
+		div.natchamp a:link, div.natchamp a:visited{
+			color: #ffffff;
+		}
+	</style>
+	<div id='profilebox'>
+		<div id='profile_title'>USA Cycling Rider Profile</div>
+		<div id='profile_close'><a href='javascript:void(0)' onclick='close_profile()'><img src='/myusac/mypage/images/close-assoc.png'/></a></div>
+		<div>
+			<div id='profile_avatar'><img src='/myusac/mypage/images/sample-avatar.png' /></div>
+			<div id='profile_name'>Robert Rutscher<div style='display:inline'>&nbsp;<a href='http://www.facebook.com/627487283' target='_blank'><img width='20' src='/images/social_icons/facebook_32.png'/></a></div><br/><div id='hometown'>Stillwater, MN &nbsp; &nbsp; <a href='javascript:void(0)' title='follow this rider' onclick='followRacer(474209)'><img src='/images/follow_racer.png' width='15'/></a> <a href='javascript:void(0)' onclick='issueChallenge(474209)' title='challenge this rider'><img src='/images/challenge_racer.png' width='15'/></a></div></div>
+			<div class='clear'></div>
+		</div>
+		<div id='current_timeline'>
+			<h3>Rider Timeline</h3>
+			<div id='timeline_events'>
+			This rider doesn't have any recent timeline events at this time. Check back soon.
+			</div>
+		</div>
+		<div>
+			<h3>Rider Bio</h3>
+			<div id='rider_bio'>
+			<p class='question'></p><p class='answer'>&quot;&quot;</p><p class='question'></p><p class='answer'>&quot;&quot;</p><p class='question'></p><p class='answer'>&quot;&quot;</p><p class='question'></p><p class='answer'>&quot;&quot;</p><p class='question'></p><p class='answer'>&quot;&quot;</p><p style='font-size:10px'>Last Updated </p>
+			</div>
+		</div>
+	</div>
